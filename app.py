@@ -98,15 +98,16 @@ with col1:
     st.write("C/C++, Python, Go, SQL, Shell, HTML, Git, Jenkins, Ansible, Terraform, Docker, AWS, Kubernetes, Excel, Linux, Power BI, Spark, SnowFlake, N8N")
     st.write("Libraries: NumPy, Pandas, Matplotlib, Scikit-learn, TensorFlow, Keras, Langchain, LangGraph, CrewAI")
     st.markdown("### 📚 Courses")
-    st.write("Data structures & Algorithms
-Computer networking,
-Operating systems
-Object oriented Programming
-Database management systems
-DevOps and Cloud computing
-Machine Learning and MLOPS
-Data science and Analysis
-Generative AI and Agentic AI")
+    st.write("""
+- Data structures & Algorithms
+- Computer networking,
+- Operating systems
+- Object oriented Programming
+- Database management systems
+- DevOps and Cloud computing
+- Machine Learning and MLOPS
+- Data science and Analysis
+- Generative AI and Agentic AI""")
     st.markdown("### 🧑‍💻 Experience")
     st.write("• **Coding Samurai (C Developer Intern):** Developed C++ applications with OOP and DSA proficiency")
     st.write("• **GLEAMATOR Technologies (AWS Intern):** Cloud design, deployment, and security on AWS")
