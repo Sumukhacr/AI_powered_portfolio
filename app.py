@@ -103,7 +103,7 @@ Azure Fundamentals (Microsoft), Problem Solving (HackerRank)
 """
 
 # ------- Streamlit UI --------
-st.image("https://ibb.co/sdbSGTjT", caption="", width=250)
+st.image("https://i.ibb.co/pBbD8H2H/1757252535757.png", caption="", width=250)
 st.set_page_config(page_title="Sumukha C R | AI Portfolio", page_icon=":briefcase:", layout="wide")
 st.title("Sumukha C R")
 st.caption("Software Engineer | Bengaluru, India")
