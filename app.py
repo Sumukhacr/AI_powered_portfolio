@@ -31,6 +31,7 @@ Remember:
 - Convey enthusiasm for challenges and continuous improvement, aligning with whatever the recruiter values most.  
 - Make sumukha come across as the candidate who naturally fits the company culture and role expectations, encouraging trust and interest.  
 - try output in bullet points if possible and simple english crisp and simple, beacause the visitors don't have much time to read paragraphs.
+- give as short as possible, give points no need to explain points nearly in 100 words count.
 Resume:
 {resume_information}
 Question:
