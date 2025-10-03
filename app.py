@@ -81,6 +81,7 @@ Azure Fundamentals (Microsoft), Problem Solving (HackerRank)
 """
 
 # ------- Streamlit UI --------
+st.image("https://drive.google.com/file/d/1MMJbsskGbdXYy-T6DJMV4wxoA6ACRn_q/view?usp=drivesdk", caption="", width=250)
 st.set_page_config(page_title="Sumukha C R | AI Portfolio", page_icon=":briefcase:", layout="wide")
 st.title("Sumukha C R")
 st.caption("Software Engineer | Bengaluru, India")
@@ -90,14 +91,22 @@ col1, col2 = st.columns([2.4, 1])
 
 with col1:
     st.markdown("### 💼 About")
-    st.info("An independent, self-motivated software engineer with expertise in cloud and AI technologies, dedicated to delivering scalable solutions.")
+    st.write("An independent, self-motivated software engineer with expertise in cloud and AI technologies, dedicated to delivering scalable solutions.")
     st.markdown("### 🎓 Education")
     st.write("- **HKBK College of Engineering** (2021–2025), B.E. in Electronics & Communication")
     st.markdown("### 🛠️ Skills & Tools")
     st.write("C/C++, Python, Go, SQL, Shell, HTML, Git, Jenkins, Ansible, Terraform, Docker, AWS, Kubernetes, Excel, Linux, Power BI, Spark, SnowFlake, N8N")
     st.write("Libraries: NumPy, Pandas, Matplotlib, Scikit-learn, TensorFlow, Keras, Langchain, LangGraph, CrewAI")
     st.markdown("### 📚 Courses")
-    st.write("DSA, Algorithms, Networking, OS, OOP, DBMS, DevOps, Cloud, ML, MLOps, Data Science, Generative AI, Agentic AI")
+    st.write("Data structures & Algorithms
+Computer networking,
+Operating systems
+Object oriented Programming
+Database management systems
+DevOps and Cloud computing
+Machine Learning and MLOPS
+Data science and Analysis
+Generative AI and Agentic AI")
     st.markdown("### 🧑‍💻 Experience")
     st.write("• **Coding Samurai (C Developer Intern):** Developed C++ applications with OOP and DSA proficiency")
     st.write("• **GLEAMATOR Technologies (AWS Intern):** Cloud design, deployment, and security on AWS")
@@ -143,20 +152,20 @@ Implemented ML models utilizing historical stock market data for price forecasti
 - Problem Solving (HackerRank)
 """)
 
-    st.success("""Ask about my resume, skills, experience, or projects! Powered by  AI Chatbot.""")
+    st.success("""Ask about my resume, skills, experience, or projects! in chat """)
 with col2:
     st.markdown("## 💬 AI Chat About Me")
 
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = []
-    user_input = st.text_input("Ask anything about Sumukha C R:", key="user_question")
+    user_input = st.text_input("Ask anything about Sumukha:", key="user_question")
     send_btn = st.button("Send")
     llm_reply = ""
     if send_btn and user_input:
         prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
         llm = ChatGroq(
             api_key=GROQ_API_KEY,
-            model="llama3-70b-8192",
+            model="llama-3.1-8b-instant",
         )
         formatted_input = prompt_template.format(
             resume_information=RESUME_TEXT,
