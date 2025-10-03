@@ -3,7 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 
 # === Insert Groq API KEY here ===
-GROQ_API_KEY = " "  # <-- Replace before deploy
+GROQ_API_KEY = st.secrets["GROQ_API"] # <-- Replace before deploy
 
 # === Custom Prompt Template ===
 PROMPT_TEMPLATE = """
